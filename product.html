@@ -1,0 +1,648 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>All Products - KLOTHING AVENUE</title>
+
+  <!-- 
+    - favicon
+  -->
+  <link rel="shortcut icon" href="/assets/images/logo.png" type="image/png">
+
+  <!-- 
+    - custom css link
+  -->
+  <link rel="stylesheet" href="./assets/css/style.css">
+
+  <!-- 
+    - google font link
+  -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Urbanist:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+
+  <!-- 
+    - preload images
+  -->
+  <link rel="preload" as="image" href="./assets/images/logo.png">
+  <link rel="preload" as="image" href="./assets/images/hero-banner-1.jpg">
+  <link rel="preload" as="image" href="./assets/images/hero-banner-2.jpg">
+  <link rel="preload" as="image" href="./assets/images/hero-banner-3.jpg">
+
+</head>
+
+<body id="top">
+
+  <!-- 
+    - #HEADER
+  -->
+
+  <header class="header">
+
+    <div class="alert">
+      <div class="container">
+        <p class="alert-text">FREE SHIPPING FOR EVERY ORDER WORTH 2000</p>
+      </div>
+    </div>
+
+    <div class="header-top" data-header>
+      <div class="container">
+
+        <button class="nav-open-btn" aria-label="open menu" data-nav-toggler>
+          <span class="line line-1"></span>
+          <span class="line line-2"></span>
+          <span class="line line-3"></span>
+        </button>
+
+        <div class="input-wrapper">
+          <input type="search" name="search" placeholder="Search product" class="search-field">
+
+          <button class="search-submit" aria-label="search">
+            <ion-icon name="search-outline" aria-hidden="true"></ion-icon>
+          </button>
+        </div>
+
+        <a href="index.html" class="logo">
+          <img src="./assets/images/logo.png" width="40" height="50" alt="Glowing">
+        </a>
+
+        <div class="header-actions">
+
+          <a href="login.html" class="header-action-btn" aria-label="user">
+            <ion-icon name="person-outline" aria-hidden="true" aria-hidden="true"></ion-icon>
+          </a>
+
+          <a href="cart.html">
+            <button id="cart-btn" class="header-action-btn" aria-label="cart item">
+              <ion-icon name="bag-handle-outline" aria-hidden="true"></ion-icon>
+              <span id="cart-badge" class="btn-badge">0</span>
+            </button>
+          </a>
+
+        </div>
+
+        <nav class="navbar">
+          <ul class="navbar-list">
+
+            <li>
+              <a href="index.html" class="navbar-link has-after">Home</a>
+            </li>
+
+            <li>
+              <a href="product.html" class="navbar-link has-after">All Products</a>
+            </li>
+
+            <li>
+              <a href="about.html" class="navbar-link has-after">About Us</a>
+            </li>
+
+            <li>
+              <a href="sizechart.html" class="navbar-link has-after">Size Chart</a>
+            </li>
+
+          </ul>
+        </nav>
+
+      </div>
+    </div>
+
+  </header>
+
+
+
+
+
+  <!-- 
+    - #MOBILE NAVBAR
+  -->
+
+  <div class="sidebar">
+    <div class="mobile-navbar" data-navbar>
+
+      <div class="wrapper">
+        
+
+        <a href="#" class="logo">
+          <img src="./assets/images/logo.png" width="179" height="26" alt="Glowing">
+        </a>
+
+        <button class="nav-close-btn" aria-label="close menu" data-nav-toggler>
+          <ion-icon name="close-outline" aria-hidden="true"></ion-icon>
+        </button>
+      </div>
+
+      <ul class="navbar-list">
+
+        <li>
+          <a href="index.html" class="navbar-link" data-nav-link>Home</a>
+        </li>
+
+        <li>
+          <a href="product.html" class="navbar-link has-after">All Products</a>
+        </li>
+
+        <li>
+          <a href="about.html" class="navbar-link" data-nav-link>About Us</a>
+        </li>
+
+        <li>
+          <a href="sizechart.html" class="navbar-link" data-nav-link>Size Chart</a>
+        </li>
+
+      </ul>
+
+    </div>
+
+    <div class="overlay" data-nav-toggler data-overlay></div>
+  </div>
+
+
+  <!-- 
+    - #ALL PRODUCT
+  -->
+
+
+  <section class=" section product" id="product">
+    <div class="product-title-wrapper">
+      <h2 class="h2 section-title">Classic Tees</h2>
+
+    </div>
+
+    <div class="product-center">
+        
+      <div class="product-item">
+        <div class="product-card-banner img-holder" style="--width: 700; --height: 720;">
+          <img src="./assets/images/P-1.jpg" width="700" height="720" loading="lazy"
+          alt="Black Classic Tee" class="img-cover">
+        </div>
+        <div class="card-content">
+          <div class="price">
+            <del class="del">₱699</del>
+            <span class="span">₱549</span>
+          </div>
+          <h3>
+            <a href="productDetails.html?id=1" class="card-title">Black Classic Tee</a>
+          </h3>
+        </div>
+      </div>
+
+      <div class="product-item">
+        <div class="product-card-banner img-holder" style="--width: 700; --height: 720;">
+          <img src="./assets/images/P-2.jpg" width="700" height="720" loading="lazy"
+          alt="Black Classic Tee" class="img-cover">
+        </div>
+        <div class="card-content">
+          <div class="price">
+            <del class="del">₱699</del>
+            <span class="span">₱549</span>
+          </div>
+          <h3>
+            <a href="productDetails.html?id=2" class="card-title">White Classic Tee</a>
+          </h3>
+        </div>
+      </div>
+
+      <div class="product-item">
+        <div class="product-card-banner img-holder" style="--width: 700; --height: 720;">
+          <img src="./assets/images/P-3.jpg" width="700" height="720" loading="lazy"
+          alt="Black Classic Tee" class="img-cover">
+        </div>
+        <div class="card-content">
+          <div class="price">
+            <del class="del">₱699</del>
+            <span class="span">₱549</span>
+          </div>
+          <h3>
+            <a href="productDetails.html?id=3" class="card-title">Black Young Cooll Classic Tee</a>
+          </h3>
+        </div>
+      </div>
+
+      <div class="product-item">
+        <div class="product-card-banner img-holder" style="--width: 700; --height: 720;">
+          <img src="./assets/images/P-4.jpg" width="700" height="720" loading="lazy"
+          alt="Black Classic Tee" class="img-cover">
+        </div>
+        <div class="card-content">
+          <div class="price">
+            <del class="del">₱699</del>
+            <span class="span">₱549</span>
+          </div>
+          <h3>
+            <a href="productDetails.html?id=4" class="card-title">White Onic Mecha Classic Tee</a>
+          </h3>
+        </div>
+      </div>
+
+    </div>    
+  </section>
+
+
+
+  <!-- 
+    - #NEW RELEASE
+  -->
+
+
+  <section class=" section product" id="product">
+    <div class="product-title-wrapper">
+      <h2 class="h2 section-title">New Release</h2>
+
+    </div>
+
+    <div class="product-center">
+        
+      <div class="product-item">
+        <div class="product-card-banner img-holder" style="--width: 700; --height: 720;">
+          <img src="./assets/images/P-6.jpg" width="700" height="720" loading="lazy"
+          alt="Facial cleanser" class="img-cover">
+        </div>
+    
+        <div class="card-content">
+    
+          <div class="price">
+            <del class="del">₱599</del>
+            <span class="span">₱299</span>
+          </div>
+      
+          <h3>
+            <a href="productDetails.html?id=5" class="card-title">Maroon Classic Tee</a>
+          </h3>
+        </div>
+      </div>
+
+      <div class="product-item">
+        <div class="product-card-banner img-holder" style="--width: 700; --height: 720;">
+          <img src="./assets/images/P-7.jpg" width="700" height="720" loading="lazy"
+          alt="Facial cleanser" class="img-cover">
+        </div>
+    
+        <div class="card-content">
+    
+          <div class="price">
+            <del class="del">₱599</del>
+            <span class="span">₱299</span>
+          </div>
+    
+          <h3>
+            <a href="productDetails.html?id=6" class="card-title">Khaki Classic Tee</a>
+          </h3>
+        </div>
+      </div>
+
+      <div class="product-item">
+        <div class="product-card-banner img-holder" style="--width: 700; --height: 720;">
+          <img src="./assets/images/P-8.jpg" width="700" height="720" loading="lazy"
+          alt="Facial cleanser" class="img-cover">
+        </div>
+    
+        <div class="card-content">
+    
+          <div class="price">
+            <del class="del">₱599</del>
+            <span class="span">₱299</span>
+          </div>
+    
+          <h3>
+            <a href="productDetails.html?id=7" class="card-title">White Classic Tee</a>
+          </h3>
+        </div>
+      </div>
+
+      <div class="product-item">
+        <div class="product-card-banner img-holder" style="--width: 700; --height: 720;">
+          <img src="./assets/images/P-9.jpg" width="700" height="720" loading="lazy"
+          alt="Facial cleanser" class="img-cover">
+        </div>
+    
+        <div class="card-content">
+    
+          <div class="price">
+            <del class="del">₱599</del>
+            <span class="span">₱299</span>
+          </div>
+    
+          <h3>
+            <a href="productDetails.html?id=8" class="card-title">Money Brain Classic Tee</a>
+          </h3>
+        </div>
+      </div>
+
+      <div class="product-item">
+        <div class="product-card-banner img-holder" style="--width: 700; --height: 720;">
+          <img src="./assets/images/P-10.jpg" width="700" height="720" loading="lazy"
+          alt="Facial cleanser" class="img-cover">
+        </div>
+    
+        <div class="card-content">
+    
+          <div class="price">
+            <del class="del">₱599</del>
+            <span class="span">₱299</span>
+          </div>
+    
+          <h3>
+            <a href="productDetails.html?id=9" class="card-title">Money Brain Classic Tee</a>
+          </h3>
+        </div>
+      </div>
+
+      <div class="product-item">
+        <div class="product-card-banner img-holder" style="--width: 700; --height: 720;">
+          <img src="./assets/images/P-11.jpg" width="700" height="720" loading="lazy"
+          alt="Facial cleanser" class="img-cover">
+        </div>
+    
+        <div class="card-content">
+    
+          <div class="price">
+            <del class="del">₱599</del>
+            <span class="span">₱299</span>
+          </div>
+    
+          <h3>
+            <a href="productDetails.html?id=10" class="card-title">Black Classic Tee</a>
+          </h3>
+        </div>
+      </div>
+
+      <div class="product-item">
+        <div class="product-card-banner img-holder" style="--width: 700; --height: 720;">
+          <img src="./assets/images/P-12.jpg" width="700" height="720" loading="lazy"
+          alt="Facial cleanser" class="img-cover">
+        </div>
+    
+        <div class="card-content">
+    
+          <div class="price">
+            <del class="del">₱599</del>
+            <span class="span">₱299</span>
+          </div>
+    
+          <h3>
+            <a href="productDetails.html?id=11" class="card-title">Green Classic Tee</a>
+          </h3>
+        </div>
+      </div>
+
+      <div class="product-item">
+        <div class="product-card-banner img-holder" style="--width: 700; --height: 720;">
+          <img src="./assets/images/P-13.jpg" width="700" height="720" loading="lazy"
+          alt="Facial cleanser" class="img-cover">
+        </div>
+    
+        <div class="card-content">
+    
+          <div class="price">
+            <del class="del">₱599</del>
+            <span class="span">₱299</span>
+          </div>
+
+          <h3>
+            <a href="productDetails.html?id=12" class="card-title">Maroon Classic Tee</a>
+          </h3>
+        </div>
+      </div>
+
+      <div class="product-item">
+        <div class="product-card-banner img-holder" style="--width: 700; --height: 720;">
+          <img src="./assets/images/P-14.jpg" width="700" height="720" loading="lazy"
+          alt="Facial cleanser" class="img-cover">
+        </div>
+    
+        <div class="card-content">
+    
+          <div class="price">
+            <del class="del">₱599</del>
+            <span class="span">₱299</span>
+          </div>
+    
+          <h3>
+            <a href="productDetails.html?id=13" class="card-title">Khaki Classic Tee</a>
+          </h3>
+        </div>
+      </div>
+
+      <div class="product-item">
+        <div class="product-card-banner img-holder" style="--width: 700; --height: 720;">
+          <img src="./assets/images/P-15.jpg" width="700" height="720" loading="lazy"
+          alt="Facial cleanser" class="img-cover">
+        </div>
+    
+        <div class="card-content">
+    
+          <div class="price">
+            <del class="del">₱599</del>
+            <span class="span">₱299</span>
+          </div>
+    
+          <h3>
+            <a href="productDetails.html?id=14" class="card-title">White Classic Tee</a>
+          </h3>
+        </div>
+      </div>
+
+    </div>    
+  </section>
+
+
+  <!-- 
+    - #FOOTER
+  -->
+
+  <footer class="footer" data-section>
+    <div class="container">
+
+      <div class="footer-top">
+
+        <ul class="footer-list">
+
+          <li>
+            <p class="footer-list-title">Company</p>
+          </li>
+
+          <li>
+            <p class="footer-list-text">
+              Find a location nearest you. See <a href="#" class="link">Our Stores</a>
+            </p>
+          </li>
+
+          <li>
+            <p class="footer-list-text bold">09360422382</p>
+          </li>
+
+          <li>
+            <p class="footer-list-text">klothingavenue1@gmail.com</p>
+          </li>
+
+        </ul>
+
+        <ul class="footer-list">
+
+          <li>
+            <p class="footer-list-title">Useful links</p>
+          </li>
+
+          <li>
+            <a href="#" class="footer-link">New Release</a>
+          </li>
+
+          <li>
+            <a href="#" class="footer-link">Best Sellers</a>
+          </li>
+
+          <li>
+            <a href="#" class="footer-link">Bundle & Save</a>
+          </li>
+
+          <li>
+            <a href="#" class="footer-link">Online Gift Card</a>
+          </li>
+
+        </ul>
+
+        <ul class="footer-list">
+
+          <li>
+            <p class="footer-list-title">Infomation</p>
+          </li>
+
+          <li>
+            <a href="#" class="footer-link">Contact Us</a>
+          </li>
+
+          <li>
+            <a href="#" class="footer-link">Shipping FAQ</a>
+          </li>
+
+          <li>
+            <a href="#" class="footer-link">Terms & Conditions</a>
+          </li>
+
+          <li>
+            <a href="#" class="footer-link">Privacy Policy</a>
+          </li>
+
+        </ul>
+
+        <div class="footer-list">
+
+          <p class="newsletter-title">Good emails.</p>
+
+          <p class="newsletter-text">
+            Enter your email below to be the first to know about high quality classic tees.
+          </p>
+
+          <form action="" class="newsletter-form">
+            <input type="email" name="email_address" placeholder="Enter your email address" required
+              class="email-field">
+
+            <button type="submit" class="btn btn-primary">Subscribe</button>
+          </form>
+
+        </div>
+
+      </div>
+
+      <div class="footer-bottom">
+
+        <div class="wrapper">
+          <p class="copyright">
+            &copy; 2024 Klothing Avenue
+          </p>
+
+          <ul class="social-list">
+
+            <li>
+              <a href="#" class="social-link">
+                <ion-icon name="logo-twitter"></ion-icon>
+              </a>
+            </li>
+
+            <li>
+              <a href="#" class="social-link">
+                <ion-icon name="logo-facebook"></ion-icon>
+              </a>
+            </li>
+
+            <li>
+              <a href="#" class="social-link">
+                <ion-icon name="logo-instagram"></ion-icon>
+              </a>
+            </li>
+
+            <li>
+              <a href="#" class="social-link">
+                <ion-icon name="logo-tiktok"></ion-icon>
+              </a>
+            </li>
+
+          </ul>
+        </div>
+
+        <a href="#" class="logo">
+          <img src="./assets/images/logo.png" width="40" height="50" alt="Klothing Avenue">
+        </a>
+      
+
+        <img src="./assets/images/pay.png" width="313" height="28" alt="available all payment method" class="w-100">
+
+      </div>
+
+    </div>
+  </footer>
+
+
+
+
+
+  <!-- 
+    - #BACK TO TOP
+  -->
+
+  <a href="#top" class="back-top-btn" aria-label="back to top" data-back-top-btn>
+    <ion-icon name="arrow-up" aria-hidden="true"></ion-icon>
+  </a>
+
+
+
+
+
+  <!-- 
+    - custom js link
+  -->
+  <script src="./assets/js/script.js" defer></script>
+
+  <!-- 
+    - ionicon link
+  -->
+  <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+  <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+
+</body>
+
+</html>
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 

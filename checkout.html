@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Check out - KLOTHING AVENUE</title>
+
+    <!-- Favicon -->
+    <link rel="shortcut icon" href="/assets/images/logo.png" type="image/png">
+
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="./assets/css/style.css">
+
+    <!-- Google Font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Urbanist:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+
+    <!-- Preload Images -->
+    <link rel="preload" as="image" href="./assets/images/logo.png">
+    <link rel="preload" as="image" href="./assets/images/hero-banner-1.jpg">
+    <link rel="preload" as="image" href="./assets/images/hero-banner-2.jpg">
+    <link rel="preload" as="image" href="./assets/images/hero-banner-3.jpg">
+</head>
+
+<body id="top">
+
+    <!-- HEADER -->
+    <header class="header">
+        <div class="header-top" data-header>
+            <div class="container">
+                <button class="nav-open-btn" aria-label="open menu" data-nav-toggler>
+                    <span class="line line-1"></span>
+                    <span class="line line-2"></span>
+                    <span class="line line-3"></span>
+                </button>
+
+                <div class="input-wrapper">
+                    <input type="search" name="search" placeholder="Search product" class="search-field">
+                    <button class="search-submit" aria-label="search">
+                        <ion-icon name="search-outline" aria-hidden="true"></ion-icon>
+                    </button>
+                </div>
+
+                <a href="index.html" class="logo">
+                    <img src="./assets/images/logo.png" width="40" height="50" alt="Glowing">
+                </a>
+
+                <div class="header-actions">
+                    <a href="login.html" class="header-action-btn" aria-label="user">
+                        <ion-icon name="person-outline" aria-hidden="true"></ion-icon>
+                    </a>
+
+                    <a href="cart.html">
+                        <button id="cart-btn" class="header-action-btn" aria-label="cart item">
+                            <ion-icon name="bag-handle-outline" aria-hidden="true"></ion-icon>
+                            <span id="cart-badge" class="btn-badge">0</span>
+                        </button>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <!-- MOBILE NAVBAR -->
+    <div class="sidebar">
+        <div class="mobile-navbar" data-navbar>
+            <div class="wrapper">
+                <a href="#" class="logo">
+                    <img src="./assets/images/logo.png" width="179" height="26" alt="Glowing">
+                </a>
+                <button class="nav-close-btn" aria-label="close menu" data-nav-toggler>
+                    <ion-icon name="close-outline" aria-hidden="true"></ion-icon>
+                </button>
+            </div>
+            <ul class="navbar-list">
+                <li><a href="index.html" class="navbar-link" data-nav-link>Home</a></li>
+                <li><a href="about.html" class="navbar-link" data-nav-link>About Us</a></li>
+                <li><a href="sizechart.html" class="navbar-link" data-nav-link>Size Chart</a></li>
+            </ul>
+        </div>
+        <div class="overlay" data-nav-toggler data-overlay></div>
+    </div>
+
+    <!-- CHECKOUT SECTION -->
+    <section class="checkout-section">
+        <div class="container">
+            <form action="submit-order.php" method="post" class="checkout-form">
+                <!-- Contact Information -->
+                <div class="form-group">
+                    <h2>Contact</h2>
+                    <label for="email">Email:</label>
+                    <input type="email" id="email" name="email" required>
+                    <label for="phone">Phone Number:</label>
+                    <input type="tel" id="phone" name="phone" required>
+                </div>
+
+                <!-- Shipping Address -->
+                <div class="form-group">
+                    <h2>Shipping Address</h2>
+                    <label for="address">Address:</label>
+                    <input type="text" id="address" name="address" required>
+                    <label for="barangay">Barangay:</label>
+                    <input type="text" id="barangay" name="barangay" required>
+                    <label for="city">City:</label>
+                    <input type="text" id="city" name="city" required>
+                    <label for="state">Province:</label>
+                    <input type="text" id="state" name="state" required>
+                    <label for="zip">ZIP Code:</label>
+                    <input type="text" id="zip" name="zip" required>
+                </div>
+
+                <!-- Order Summary -->
+                <div class="form-group">
+                    <h2>Order Summary</h2>
+                    <ul id="order-summary" class="order-summary">
+                        <!-- Order items will be dynamically added here -->
+                    </ul>
+                    <li class="order-total">
+                        Total: <span id="order-total">₱0.00</span>
+                    </li>
+                </div>
+
+                <!-- Payment Information -->
+                <div class="form-group">
+                    <h2>Payment</h2>
+                    <p>All transactions are secure and encrypted.</p>
+                    <fieldset>
+                        <legend>Choose a payment method:</legend>
+                        <div class="payment-method">
+                            <input type="radio" id="cod" name="payment-method" value="cod" checked>
+                            <label for="cod">Cash on Delivery (COD)</label>
+                            <p>Pay your order on the day of delivery.</p>
+                        </div>
+                        <div class="payment-method">
+                            <input type="radio" id="online-transfer" name="payment-method" value="online-transfer">
+                            <label for="online-transfer">Online Transfer (NON COD)</label>
+                            <p>You will pay via online Bank or E-wallet</p>
+                        </div>
+                    </fieldset>
+                </div>
+
+                <!-- Billing Address -->
+                <div class="form-group">
+                    <h2>Billing Address</h2>
+                    <label>
+                        <input type="radio" name="billing-address" value="same" checked>
+                        Same as shipping address
+                    </label>
+                    <label>
+                        <input type="radio" name="billing-address" value="different">
+                        Use a different billing address
+                    </label>
+
+                    <div id="billing-address-fields" class="hidden">
+                        <h3>Billing Address Details</h3>
+                        <label for="billing-firstname">First Name:</label>
+                        <input type="text" id="billing-firstname" name="billing-firstname">
+                        <label for="billing-lastname">Last Name:</label>
+                        <input type="text" id="billing-lastname" name="billing-lastname">
+                        <label for="billing-address2">Address:</label>
+                        <input type="text" id="billing-address2" name="billing-address">
+                        <label for="billing-apartment">Apartment, suite, etc. (optional):</label>
+                        <input type="text" id="billing-apartment" name="billing-apartment">
+                        <label for="billing-postalcode">Postal Code:</label>
+                        <input type="text" id="billing-postalcode" name="billing-postalcode">
+                        <label for="billing-city">City:</label>
+                        <input type="text" id="billing-city" name="billing-city">
+                        <label for="billing-phone">Phone (optional):</label>
+                        <input type="tel" id="billing-phone" name="billing-phone">
+                    </div>
+                </div>
+
+                <button type="submit" class="btn btn-primary">Place Order</button>
+            </form>
+        </div>
+    </section>
+
+    <footer class="footer" data-section>
+        <div class="container">
+            <div class="footer-bottom">
+                <div class="wrapper">
+                    <p class="copyright">
+                        &copy; 2024 Klothing Avenue
+                    </p>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- BACK TO TOP -->
+    <a href="#top" class="back-top-btn" aria-label="back to top" data-back-top-btn>
+        <ion-icon name="arrow-up" aria-hidden="true"></ion-icon>
+    </a>
+
+    <!-- Custom JS -->
+    <script src="./assets/js/script.js" defer></script>
+
+    <!-- Ionicon -->
+    <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+</body>
+</html>
